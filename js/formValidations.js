@@ -31,7 +31,6 @@ export const formValidations = () => {
     isValidYear();
 
     if (form.querySelectorAll('span.is-active').length > 0) {
-      console.log('hay errores');
     } else {
       inputs.forEach((input) => {
         const { value, name } = input;
@@ -42,7 +41,6 @@ export const formValidations = () => {
       const correctDate = isValidDate(year, month, day);
 
       if (correctDate) {
-        console.log('la fecha es correcta');
         /* LLAMAR EL VALIDADOR DEL CUMPLEAÑOS */
         const currentAge = ageCalculator(year, month, day);
         showAge(currentAge);
