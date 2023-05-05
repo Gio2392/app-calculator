@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Age Calculator App</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="app">
+        <form class="form-group" name="form">
+          <div class="form__grid">
+            <div class="form-control">
+              <label class="form__label" for="dayInput">DAY</label>
+              <input
+                type="number"
+                name="day"
+                id="dayInput"
+                placeholder="DD"
+                min="0"
+              />
+            </div>
+
+            <div class="form-control">
+              <label class="form__label" for="monthInput">MONTH</label>
+              <input
+                type="number"
+                name="month"
+                id="monthInput"
+                placeholder="MM"
+                min="0"
+              />
+            </div>
+
+            <div class="form-control">
+              <label class="form__label" for="yearInput">YEAR</label>
+              <input
+                type="number"
+                name="year"
+                id="yearInput"
+                placeholder="YYYY"
+                min="0"
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-submit">
+            <img src="/icon-arrow.svg" alt="" />
+          </button>
+        </form>
+        <section class="result">
+          <p class="result__item">
+            <span class="result__value result__value--years">- -</span> years
+          </p>
+          <p class="result__item">
+            <span class="result__value result__value--months">- -</span> months
+          </p>
+          <p class="result__item">
+            <span class="result__value result__value--days">- -</span> days
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
